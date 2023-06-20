@@ -1,13 +1,13 @@
-#include <unistd.h>
+#ifndef draft
+#define draft
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * ISD - draft
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @c: draft
+ *
+ * Return: draft
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
+
+#endif

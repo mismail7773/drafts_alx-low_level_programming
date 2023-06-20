@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * ISD - draft
  *
- * Return: Always 0 (success)
+ * Return: draft
  */
 int main(void)
 {
