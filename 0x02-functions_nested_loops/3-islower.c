@@ -10,7 +10,7 @@
 int _islower(int c)
 {
 	int i;
-	int j;	
+	int j;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
@@ -25,5 +25,5 @@ int _islower(int c)
 		}
 	}
 
-	return j;
+	return (j);
 }
