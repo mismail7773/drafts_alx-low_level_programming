@@ -2,7 +2,8 @@
 
 /**
  * _abd - draft
- *
+ *@n: draft
+
  * Return: draft
  */
 int _abs(int n)
