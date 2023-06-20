@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet - draft
- *
- * Return: draft
  */
 void print_alphabet(void)
 {
