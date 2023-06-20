@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ISD - draft
+ * main - draft
  *
  * Return: draft
  */
