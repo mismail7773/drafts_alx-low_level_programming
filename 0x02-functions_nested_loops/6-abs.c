@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abd - draft
+ * _abs - draft
  *@n: draft
 
  * Return: draft
