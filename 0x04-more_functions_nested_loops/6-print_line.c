@@ -2,6 +2,7 @@
 
 /**
  * print_line - draft
+ *@n: draft
  */
 void print_line(int n)
 {
