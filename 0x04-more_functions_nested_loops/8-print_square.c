@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_square
+ * print_square - draft
  *
  * @size: draft
  */
@@ -19,8 +19,8 @@ void print_square(int size)
 			for (j = 1; j <= n; j++)
 			{
 				_putchar('#');
-			}	
-			
+			}
+
 			_putchar('\n');
 		}
 	}
