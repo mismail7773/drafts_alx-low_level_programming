@@ -18,6 +18,6 @@ int _strlen(char *s)
 		m = s;
 		i++;
 	}
-	j = m + 1 - n;
-	return (j);
+	j = m - n;
+	return (j + 1);
 }
