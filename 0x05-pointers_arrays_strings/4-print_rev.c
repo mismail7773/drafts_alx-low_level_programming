@@ -2,7 +2,7 @@
 
 /**
  * print_rev - draft
- * @: draft
+ * @s: draft
  */
 void print_rev(char *s)
 {
