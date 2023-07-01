@@ -5,19 +5,14 @@
  * @s: draft
  */
 int _strlen(char *s)
-{
-	char *n, *m;
-
-	n = s;
-	
+{	
 	int i, j;
 
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		m = s;
+		j = i;
 		i++;
 	}
-	j = m - n;
-	return (j + 1);
+	return (j);
 }
