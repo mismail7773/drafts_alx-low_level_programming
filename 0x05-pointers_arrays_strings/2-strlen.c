@@ -16,5 +16,5 @@ int _strlen(char *s)
 		j = i;
 		i++;
 	}
-	return (j);
+	return (j + 1);
 }
