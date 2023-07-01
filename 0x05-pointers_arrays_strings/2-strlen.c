@@ -16,5 +16,12 @@ int _strlen(char *s)
 		j = i;
 		i++;
 	}
-	return (j + 1);
+	if (j != 0)
+	{
+		return (j + 1);
+	}
+	else
+	{
+		return (j);
+	}
 }
