@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * print_rev - draft
+ * rev_string - draft
  * @s: draft
  */
 void rev_string(char *s)
 {
-        int i, j, k;
+	int i, j, k;
 	char a, b;
 
-        i = 0;
-        while (s[i] != '\0')
-        {
-                i++;
-        }
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
 
 	j = i - 1;
 	k = 0;
-	for (;j > k; j--)
+	for (; j > k; j--)
 	{
 		a = s[k];
 		b = s[j];
