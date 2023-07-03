@@ -34,7 +34,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%lu%04lu", sum1, sum2);
+			printf("%lu%03lu", sum1, sum2);
 		}
 		if (i != 96)
 		{
