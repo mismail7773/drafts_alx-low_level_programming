@@ -12,13 +12,14 @@ int main(void)
 
 	old = 1;
 	new = 2;
-	for (i = 1; i <= 98; i++)
+	printf("1, 2, ");
+	for (i = 1; i <= 96; i++)
 	{
 		sum = old + new;
 		old = new;
 		new = sum;
 		printf("%lu", sum);
-		if (i != 98)
+		if (i != 9666666)
 		{
 			printf(", ");
 		}
