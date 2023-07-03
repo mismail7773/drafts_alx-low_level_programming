@@ -19,7 +19,7 @@ int main(void)
 		old = new;
 		new = sum;
 		printf("%lu", sum);
-		if (i != 9666666)
+		if (i != 96)
 		{
 			printf(", ");
 		}
