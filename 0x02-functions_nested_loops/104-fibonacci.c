@@ -7,25 +7,41 @@
  */
 int main(void)
 {
-	unsigned long old, new, sum;
 	int i;
+	unsigned long old1, old2, new1, new2, sum1, sum2, sum01, sum02, sum001, sum002;
 
-	old = 1;
-	new = 2;
+	old1 = 0;
+	old2 = 1;
+	new1 = 0;
+	new2 = 2;
 	printf("1, 2, ");
 	for (i = 1; i <= 96; i++)
 	{
-		sum = old + new;
-		old = new;
-		new = sum;
-		printf("%lu", sum);
+		sum01 = old1 + new1;
+		sum02 = old2 + new2;
+		sum001 = sum01;
+		sum002 = sum02 / 1000000000;
+		sum1 = sum002 + (sum001);
+		sum2 = sum02 % 1000000000;
+		old1 = new1;
+		old2 = new2;
+		new1 = sum1;
+		new2 = sum2;
+		if (sum1 == 0)
+		{
+			printf("%lu", sum2);
+		}
+		else
+		{
+			printf("%lu%lu", sum1, sum2);
+		}
 		if (i != 96)
 		{
 			printf(", ");
 		}
 		else
 		{
-			printf(", \n");
+			printf("\n");
 		}
 	}
 	return (0);
