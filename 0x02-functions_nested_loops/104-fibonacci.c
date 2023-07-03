@@ -21,9 +21,9 @@ int main(void)
 		sum01 = old1 + new1;
 		sum02 = old2 + new2;
 		sum001 = sum01;
-		sum002 = sum02 / 1000000000;
+		sum002 = sum02 / 1000000;
 		sum1 = sum002 + (sum001);
-		sum2 = sum02 % 1000000000;
+		sum2 = sum02 % 1000000;
 		old1 = new1;
 		old2 = new2;
 		new1 = sum1;
