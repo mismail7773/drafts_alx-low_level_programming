@@ -5,7 +5,6 @@
  * @s: draft
  * @i: draft
  * @j: draft
- * @k : draft
  * Return: draft
  */
 int is_palindrome0(char *s, int i, int j)
@@ -51,7 +50,7 @@ int is_palindrome(char *s)
 		return (1);
 	j = 0;
 	k = i;
-	i--;	
+	i--;
 	m = (is_palindrome0(s, i, j));
 	if (m == k)
 	{
