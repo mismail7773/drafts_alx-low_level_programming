@@ -1,2 +1,10 @@
 #include "main.h"
-int _isupper(int c);
+
+/**
+ * _isupper - draft
+ * @c: draft
+ * Return: draft
+ */
+int _isupper(int c)
+{
+}

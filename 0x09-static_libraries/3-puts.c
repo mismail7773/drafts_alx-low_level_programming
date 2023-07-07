@@ -4,4 +4,6 @@
  * _puts - draft
  * @s: draft
  */
-void _puts(char *s);
+void _puts(char *s)
+{
+}

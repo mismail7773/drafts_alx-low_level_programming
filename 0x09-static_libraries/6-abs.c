@@ -5,4 +5,6 @@
  * @n: draft
  * Return: draft
  */
-int _abs(int n);
+int _abs(int n)
+{
+}

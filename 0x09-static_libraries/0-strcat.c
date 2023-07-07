@@ -6,4 +6,6 @@
  * @src: draft
  * Return: draft
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
+{
+}

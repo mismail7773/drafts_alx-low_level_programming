@@ -5,4 +5,6 @@
  * @c: draft
  * Return: draft
  */
-int _putchar(char c);
+int _putchar(char c)
+{
+}

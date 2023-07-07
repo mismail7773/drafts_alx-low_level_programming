@@ -6,4 +6,6 @@
  * @accept: draft
  * Return: draft
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
+{
+}

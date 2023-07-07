@@ -5,4 +5,6 @@
  * @c: draft
  * Return: draft
  */
-int _islower(int c);
+int _islower(int c)
+{
+}

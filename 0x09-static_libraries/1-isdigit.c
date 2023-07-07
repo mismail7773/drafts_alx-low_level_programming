@@ -5,4 +5,6 @@
  * @c: draft
  * Return: draft
  */
-int _isdigit(int c);
+int _isdigit(int c)
+{
+}
