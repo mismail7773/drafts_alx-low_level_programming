@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		{
 			num = atoi(argv[1]);
 			c25 = num / 25;
-			num -= c25 * 25; 
+			num -= c25 * 25;
 			c10 = num / 10;
 			num -= c10 * 10;
 			c5 = num / 5;
