@@ -3,6 +3,8 @@
 
 /**
  * main - draft
+ * @argc: draft
+ * @argv: draft
  * Return: draft
  */
 int main(int argc, char *argv[])
