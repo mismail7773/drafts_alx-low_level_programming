@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	(void)argc;
-	if (atoi(*(argv + 2)) == '\0' || atoi(*(argv + 1)) == '\0')
+	if (atoi(*(argv + 2)) == '\0' || atoi(*(argv + 1)) == '\0' || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
