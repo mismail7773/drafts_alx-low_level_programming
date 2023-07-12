@@ -28,12 +28,13 @@ char *argstostr(int ac, char **av)
 	if (s == NULL)
 		return (NULL);
 	k = 0;
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++, k++)
 			s[k] = av[i][j];
 		s[k] = '\n';
 		k++;
 	}
+	s[k] = NULL;
 	return (s);
 }
