@@ -9,48 +9,48 @@
 char **strtow(char *str)
 {
 	char **s;
-	int i, j, k, l;
+	int i, j, k, l, m, n;
 
+	if (str == NULL)
+		return (NULL);
+	if (str[0] == '\0')
+		return (NULL);
 	j = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == '\n')
-		{
-			if (str[i + 1] == '\n')
-				continue;
-			if (str[i + 1] == '\0')
-				break;
+		if (str[i] != ' ' && str[i + 1] == ' ')
 			j++;
-		}
 	}
-	s = malloc(j * sizeof(char *));
+	s = malloc((j + 1) * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
-	k = 0;
-	for (; k < j; k++)
+	m = 0;
+	n = 0;
+	for (k = 0; k < j; k++)
 	{
 		l = 0;
-		for (i = 0; str[i] != '\0'; i++)
+		for (i = m; str[i] != '\0'; i++)
 		{
-			if (str[i + 1] == '\0')
-				break;
-			if (str[i + 1] == '\n')
+			if (str[i] != ' ')
 			{
-				continue;
-			}
-			else
-			{
-				s[k][l] = str[i];
 				l++;
-				if (str[i + 1] == '\n')
-				{
-					s[k][l] = '\n';
-					l++;
-					break;
-				}
 			}
+			if (str[i] != ' ' && str[i + 1] == ' ')
+			{
+				s[k] = malloc(sizeof(char) * (l + 1));
+				n = l;
+				m = i + 1;
+				for (; str[i] != ' '; i--)
+				{
+					s[k][l - 1] = str[i];
+					l--;
+				}
+				s[k][n] = '\0';
+				break;
+			}
+
 		}
 	}
+	s[k] = NULL;
 	return (s);
-
 }
