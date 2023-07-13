@@ -20,6 +20,8 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ' && str[i + 1] == ' ')
 			j++;
+		if (str[i] != ' ' && str[i + 1] == '\0')
+			j++;
 	}
 	s = malloc((j + 1) * sizeof(char *));
 	if (s == NULL)
