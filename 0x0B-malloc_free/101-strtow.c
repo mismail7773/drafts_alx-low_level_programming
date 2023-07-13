@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * strtow - draft
@@ -23,6 +24,9 @@ char **strtow(char *str)
 		if (str[i] != ' ' && str[i + 1] == '\0')
 			j++;
 	}
+	printf("%d\n", j);
+	if (j == 0)
+		return (NULL);
 	s = malloc((j + 1) * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
