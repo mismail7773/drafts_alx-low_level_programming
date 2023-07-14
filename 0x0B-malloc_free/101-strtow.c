@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * strtow0 - draft
@@ -40,7 +39,6 @@ char **strtow(char *str)
 	if (str[0] == '\0')
 		return (NULL);
 	j = strtow0(str);
-	printf("%d\n", j);
 	if (j == 0)
 		return (NULL);
 	s = malloc((j + 1) * sizeof(char *));
