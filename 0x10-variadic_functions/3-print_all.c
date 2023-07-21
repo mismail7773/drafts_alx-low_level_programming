@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	char *a = "ifcs";
 
 	va_start(p, format);
-	while (*(format + i))
+	while (*(format + i) && format)
 	{
 		j = 0;
 		while (*(a + j))
